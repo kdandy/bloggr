@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  overflow-x: hidden;
+  @apply text-base;
+  @apply text-[#4b5862];
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.up {
+  @apply rotate-180;
+}
+
+.fixed-nav {
+  @apply fixed bg-gradient-to-r from-vlRed to-lRed top-0  z-50;
+}
+
+.hero {
+  width: 100%;
+  height: 660px;
+  background-image: url("../images/bg-pattern-intro-desktop.svg");
+  position: relative;
+  background-position: 35%;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 6rem;
+}
+
+.hero::before {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.state {
+  background-image: url("../images/bg-pattern-circles.svg"),
+    linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-repeat: no-repeat;
+  background-size: 110rem, 100%;
+  background-position: left -25rem top -61rem, left;
+}
